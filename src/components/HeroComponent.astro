@@ -1,0 +1,27 @@
+---
+import { Image } from "astro:assets";
+import ePortrait from "../assets/images/ePortrait2.jpg";
+---
+
+<section
+  class="overflow-hidden relative bg-heroPattern bg-center bg-no-repeat h-full m-8 bg-cover"
+>
+  <div class="container mx-auto md:flex md:h-full md:w-full">
+    <div class="m-8  md:shrink-0">
+    <Image
+      class="w-full lg:w-3/4 md:w-1/2 mx-auto border-solid border-2 border-red-900 sm:w-1/2"
+      src={ePortrait}
+      alt="eportrait"
+    />
+    </div>
+
+    <div
+      class=" px-4 text-center h-300 border-solid border-2 border-gray-900"
+    >
+      <p class="m-8 p-5 order-solid border-2 border-gray-900">
+        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nemo, neque? Quam neque porro repellat blanditiis unde nihil illo dolorem explicabo! Ab consectetur, eaque quae fugiat in vel repellendus omnis tenetur!
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Ratione perferendis deleniti rerum fuga quo dolore consequuntur provident placeat animi. Sapiente consequatur explicabo obcaecati ipsa molestiae quo dolorum libero soluta nemo!
+      </p>
+    </div>
+  </div>
+</section>
