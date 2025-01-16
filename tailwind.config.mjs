@@ -8,10 +8,6 @@ export default {
       },
     },
 
-    screens: {
-      // => @media (min-width: 480px and max-width: 639px) { ... }
-      xs: { min: "480px", max: "639px" },      
-    },
   },
 
   plugins: [],
