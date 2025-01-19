@@ -1,7 +1,7 @@
 ---
 import NavItem from "./NavItem.astro";
 import { Image } from 'astro:assets';
-import eds from '../assets/images/eds-s.png';
+import eds from '../assets/images/eds-s.png'
 
 const navItems = [
 {href: "/", label: "Home"},
@@ -11,14 +11,14 @@ const navItems = [
 ]
 ---
 
-<section class="nav-section">
+<section class="nav-section bg-heroBgYellow">
 
         <!-- DESKTOP NAVIGATION START -->
       <nav
-        class="relative px-6 py-6 flex justify-between items-center bg-white w-3/4 mx-auto"
+        class="relative px-6 py-6 flex justify-between items-center w-3/4 mx-auto my-auto"
       >
         <!-- eds icon -->
-        <a class="text-2xl font-bold leading-none border-solid border-2 border-red-500" href="/">
+        <a class="" href="/">
           <Image src={eds} alt="eds-logo" width="80" height="100">
         </a>
 
@@ -51,19 +51,13 @@ const navItems = [
 
       <!-- MOBILE NAVIGATION START -->
       <div
-        class="hidden navbar-menu fixed top-0 left-0 bottom-0 w-5/6 max-w-sm z-50"
+        class="hidden navbar-menu fixed top-0 left-0 bottom-0 w-1/5 z-50 bg-bgYellow"
       >
-        <div class="navbar-backdrop fixed inset-0 bg-gray-800 opacity-25"></div>
+        <div class="navbar-backdrop fixed inset-0 opacity-25"></div>
         <nav
           class="relative flex flex-col py-6 px-6 h-full w-full bg-white border-r overflow-y-auto"
         >
-          <div class="flex items-center mb-8">
-
-            <!-- mobile nav eds icon -->
-            <a class="mr-auto text-3xl font-bold leading-none" href="/">
-              <Image src={eds} alt="eds-logo" width="80" height="100">
-            </a>
-            <!--  -->
+          <div class="flex flex-col items-center mb-8">
 
             <!-- mobile nav close button -->
             <button class="navbar-close">
@@ -80,12 +74,21 @@ const navItems = [
                   stroke-width="2"
                   d="M6 18L18 6M6 6l12 12"></path>
               </svg>
+              Close
             </button>
             <!--  -->
+
+            <!-- mobile nav eds icon -->
+            <a class="m-auto text-3xl font-bold leading-none mt-8" href="/">
+              <Image src={eds} alt="eds-logo" width="80" height="100">
+            </a>
+            <!--  -->
+
+            
           </div>
 
           <!-- Mobile Nav menu items -->
-          <div>
+          <div class="text-center">
             <ul>
               <NavItem href="/" label="Home" mobile/>
               <NavItem href="about" label="About Elaine" mobile/>

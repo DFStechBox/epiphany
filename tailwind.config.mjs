@@ -6,13 +6,17 @@ export default {
       backgroundImage: {
         heroPattern: "url('/src/assets/images/wildflowers.jpg')",
       },
-    },
+      colors: {
+        heroBgYellow: "#FFFDF4",
+        bgYellow: "#FFFCEC",
+        bgYellow2: "#F6EDC4",
+      },
 
+      fontFamily: {
+        sans: ["Dancing Script", "sans-serif"],
+      },
+    },
   },
 
   plugins: [],
-
-  colors: {
-    bgYellow: "#FFFDF4",
-  },
 };
