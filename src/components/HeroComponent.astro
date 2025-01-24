@@ -1,37 +1,20 @@
 ---
-import { Image } from "astro:assets";
-import ePortrait from "../assets/images/ePortrait2.jpg";
+import TopNav from "./TopNav.astro";
 ---
 
-<section class=" h-full w-full border-solid bg-bgYellow">
-  
-  <div class="lg:h-64 md:h-48 h-36 w-full overflow-hidden bg-center bg-no-repeat bg-heroPattern bg-cover">
-    <div class="m-auto w-3/4 mt-12 border-solid border-2 border-gray-900">
-     <p class="text-4xl lg:text-8xl md:text-6xl text-center"> Elaine Denald Stewart</p>
-     <p class="text-center">Author of Tiny Book Series</p>
-    </div>
-    
-    </div>
-    <div class=" -mt-18 lg:-mt-38 md:-mt-20 md:ml-12 w-64 mx-auto">
-    <Image
-      class="w-full md:shrink-0"
-      src={ePortrait}
-      alt="eportrait"
-    />
-    </div>
-  </section>
-    </container>
-
-
-
-  <div>
-    <div
-      class=" px-4 text-center h-300 border-solid border-2 border-gray-900"
-    >
-      <p class="m-8 p-5 border-solid border-2 border-gray-900">
-        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nemo, neque? Quam neque porro repellat blanditiis unde nihil illo dolorem explicabo! Ab consectetur, eaque quae fugiat in vel repellendus omnis tenetur!
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Ratione perferendis deleniti rerum fuga quo dolore consequuntur provident placeat animi. Sapiente consequatur explicabo obcaecati ipsa molestiae quo dolorum libero soluta nemo!
-      </p>
-    </div>
+<section class="h-full w-full">
+  <div class="container mx-auto w-full translate-y-12">
+    <p class="edsName mt-8 text-5xl lg:text-9xl md:text-6xl text-center">
+      Elaine Denald Stewart
+    </p>
+  </div>
+  <div class="">
+    <TopNav />
   </div>
 </section>
+
+<style>
+  .edsName {
+    font-family: "Tangerine", cursive;
+  }
+</style>

@@ -13,18 +13,25 @@ const isActive = currentPath === href.slice(1);
 const isMobile = mobile ? "mobile-nav-item" : "nav-item";
 
 ---
-
-<li>
-  <a class:list={[isMobile, isActive ? "active" : ""]} href={href}>{label}</a>
+<div class="container">
+<li class="">
+  <a class:list={[isMobile, isActive ? "active" : ""]} href={href}>{label} </a>
 </li>
-
+</div>
 <style>
   .mobile-nav-item {
     @apply block p-4 text-2xl font-semibold bg-bgYellow text-gray-400 hover:bg-green-50 hover:text-green-500;
   }
 
+  /* .divider {
+    @apply text-black font-serif pl-4;
+    
+  } */
+
   .nav-item {  
-    @apply text-3xl text-gray-400 hover:text-gray-500;
+    /* @apply text-2xl text-gray-400 hover:text-gray-500; */
+    font-family: 'Dancing Script Variable', cursive;
+    
   }
 
   .active {

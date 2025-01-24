@@ -1,7 +1,7 @@
 ---
 import NavItem from "./NavItem.astro";
 import { Image } from 'astro:assets';
-import eds from '../assets/images/eds-s.png'
+import eds from '../assets/images/edslogo12.svg'
 
 const navItems = [
 {href: "/", label: "Home"},
@@ -11,16 +11,19 @@ const navItems = [
 ]
 ---
 
-<section class="nav-section bg-heroBgYellow">
+<section class="nav-section">
 
         <!-- DESKTOP NAVIGATION START -->
+         <div class="container mx-auto">
       <nav
-        class="relative px-6 py-6 flex justify-between items-center w-3/4 mx-auto my-auto"
+        class="relative pl-1 translate-y-16 flex justify-between items-center w-full border-t border-b"
       >
         <!-- eds icon -->
-        <a class="" href="/">
-          <Image src={eds} alt="eds-logo" width="80" height="100">
+         <div class="mx-auto lg:mx-8 h-18 w-32">
+        <a href="/">
+          <Image src={eds} alt="eds-logo"  class="w-2/3" >
         </a>
+        </div>
 
         <!-- mobile menue hamburger icon -->
         <div class="lg:hidden">
@@ -39,14 +42,15 @@ const navItems = [
 
           <!-- desktop menue items -->
         <ul
-          class="hidden absolute top-1/2 left-1/2 transform -translate-y-1/2 -translate-x-1/2 lg:flex lg:mx-auto lg:items-center lg:w-auto lg:space-x-6"
+          class="hidden absolute top-1/4 left-1/2 transform -translate-y-1/2 -translate-x-1/2 lg:flex pl-24 lg:pl-12 lg:pt-8 lg:w-3/4 lg:ml-20 md:p-0 lg:space-x-16 md:space-x-8 text-4xl"
         >
           <NavItem href="/" label="Home" />
-          <NavItem href="about" label="About Elaine" />
+          <NavItem href="about" label="About Me" />
           <NavItem href="books" label="Books" />
           <NavItem href="contact" label="Contact" />
         </ul>
       </nav>
+      </div>
       <!-- end -->
 
       <!-- MOBILE NAVIGATION START -->
@@ -74,7 +78,7 @@ const navItems = [
                   stroke-width="2"
                   d="M6 18L18 6M6 6l12 12"></path>
               </svg>
-              Close
+
             </button>
             <!--  -->
 
@@ -91,7 +95,7 @@ const navItems = [
           <div class="text-center">
             <ul>
               <NavItem href="/" label="Home" mobile/>
-              <NavItem href="about" label="About Elaine" mobile/>
+              <NavItem href="about" label="About Me" mobile/>
               <NavItem href="books" label="Books" mobile/>
               <NavItem href="contact" label="Contact" mobile/>
             </ul>
@@ -125,3 +129,7 @@ const navItems = [
 
       });
     </script>
+
+    <style>
+
+    </style>

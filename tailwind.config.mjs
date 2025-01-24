@@ -10,10 +10,14 @@ export default {
         heroBgYellow: "#FFFDF4",
         bgYellow: "#FFFCEC",
         bgYellow2: "#F6EDC4",
+        HeroComp2Bg: "#FFFFDE",
+        blk: "ffffff",
+        bgColor1: "#c7ab59",
+        bgColor2: "ded2ab",
       },
 
       fontFamily: {
-        sans: ["Dancing Script", "sans-serif"],
+        sans: ["Dancing Script variable", "sans-serif"],
       },
     },
   },
