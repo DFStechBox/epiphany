@@ -1,1 +1,4 @@
 Site was developed with "Astro Framework"
+Clean Cache: "npm cache verify"
+
+Rename: "deps_temp_f76f8f77" to "deps"

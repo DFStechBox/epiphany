@@ -2,3 +2,22 @@ Project Fonts
 
 1.  This project uses Astro fonts
 2.  The package is built around fontsource at "https://fontsource.org/ "
+
+Installation:
+Install the static version of this font by running the following command:
+
+npm install @fontsource/cormorant-garamond
+
+
+Import:
+Include the following line in the root layout of your project to import the font:
+
+import '@fontsource/cormorant-garamond';
+
+
+CSS:
+Include the CSS in your project by adding the following line to your project:
+
+body {
+  font-family: 'Cormorant Garamond', serif;
+}

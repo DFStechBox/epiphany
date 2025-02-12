@@ -1,0 +1,93 @@
+---
+
+---
+
+<!doctype html>
+<html lang="en-US">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width" />
+    <title>Flexbox wrap 0 — children overflowing</title>
+  </head>
+  <body>
+
+   <div class="wrapper">
+
+    <div class="box">
+      <h2 class="">Sub Grid Tutorial</h2>
+      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ex ducimus, vero sequi eius vel quaerat enim mollitia tenetur molestiae ad reiciendis beatae deleniti saepe? Totam voluptas soluta at illum itaque?</p>
+      <img src="src/assets/images/ePortrait.jpg" alt="portrait">
+    </div>
+
+    <div class="box">
+      <h2 class="">Sub Grid Tutorial</h2>
+      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ex ducimus, vero sequi eius vel quaerat enim mollitia tenetur </p>
+      <img src="src/assets/images/ePortrait.jpg" alt="portrait">
+    </div>
+
+    <div class="box">
+      <h2 class="">Sub Grid Tutorial</h2>
+      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ex ducimus, vero sequi eius vel quaerat enim mollitia tenetur molestiae ad reiciendis beatae deleniti saepe? </p>
+      <img src="src/assets/images/ePortrait.jpg" alt="portrait">
+    </div>
+
+    <div class="box">
+      <h2 class="">Sub Grid Tutorial</h2>
+      <p>Lorem ipsum dolor </p>
+      <img src="src/assets/images/ePortrait.jpg" alt="portrait">
+    </div>
+
+   </div>
+   
+      
+  </body>
+</html>
+
+<style>
+  *,
+  *::before,
+  *::after {
+    box-sizing: border-box;
+  }
+
+  /* * {
+    margin: 0;
+  } */
+
+  body {
+    font-family: system-ui;
+    width: 90%;
+    margin-inline: auto;
+  }
+
+  h2 {
+    font-weight: bold
+  }
+
+  img {
+    max-width: 100%;
+    display: block;
+  }
+
+  
+  .wrapper {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: auto auto auto;
+    gap: 1rem;
+    margin-top: 5rem;
+  }
+
+  .box {
+    border: 1px solid red;
+    border-radius: 6px;
+    padding: 2rem;
+    text-align: center;
+    display: grid;
+    grid-template-rows: subgrid;
+    grid-row: 1 / 4;
+  }
+
+
+
+</style>

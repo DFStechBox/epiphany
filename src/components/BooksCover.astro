@@ -1,0 +1,33 @@
+---
+import { Image } from "astro:assets";
+import ePortrait from "../assets/images/ePortrait2.jpg";
+import FrCoverItsotfB1 from "../assets/images/FrCoverItsotfB1.jpg";
+---
+
+<section class="wrapper mt-12 mb-12 pt-12 pb-12">
+
+
+  <div class="content-center border">
+    <Image
+      height={380}
+      width={280}
+      src={FrCoverItsotfB1}
+      alt={"Book Cover"}
+      quality={"high"}
+    />
+  </div>
+</section>
+
+<style>
+.image {
+}
+
+  .wrapper {
+    border: 1px solid red;
+    grid-template-columns: auto auto;
+    grid-template-rows: auto;
+  }
+
+  .box {
+  }
+</style>
