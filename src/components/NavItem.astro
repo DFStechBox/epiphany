@@ -18,22 +18,17 @@ const isMobile = mobile ? "mobile-nav-item" : "nav-item";
   <a class:list={[isMobile, isActive ? "active" : ""]} href={href}>{label} </a>
 </li>
 </div>
+
+
 <style>
   .mobile-nav-item {
     @apply block p-4 text-2xl bg-bgYellow text-gray-500 hover:bg-green-50 hover:text-green-500;
-
     font-family: 'Allura', cursive;
   }
 
-  /* .divider {
-    @apply text-black font-serif pl-4;
-    
-  } */
-
   .nav-item {  
     font-family: 'Allura', cursive;
-    /* font-family: 'Dancing Script Variable', cursive; */
-    
+    /* font-family: 'Dancing Script Variable', cursive; */   
   }
 
   .active {
