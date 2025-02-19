@@ -2,6 +2,7 @@
 import NavItem from "./NavItem.astro";
 import { Image } from 'astro:assets';
 import eds from '../assets/images/edslogo12.svg'
+import { string } from "astro:schema";
 
 const navItems = [
 {href: "/", label: "Home"},
@@ -9,14 +10,16 @@ const navItems = [
 {href: "books", label: "Books"},
 {href: "contact", label: "Contact"},
 ]
+
+const d = new Date().toString
 ---
 
-<section class="nav-section mt-20">
+<section class="nav-section mt-8">
 
         <!-- DESKTOP NAVIGATION START -->
          <div class="container mx-auto">
       <nav
-        class="relative pl-1 flex justify-between items-center w-full border-t border-b border-bgColor1"
+        class="relative pl-1 flex justify-between items-center w-full border-t-2 border-b-2 border-bgColor1"
       >
         <!-- eds icon -->
          <div class="mx-auto lg:mx-8 h-18 w-32">
@@ -105,7 +108,7 @@ const navItems = [
 
             <!-- copyright -->
             <p class="my-4 text-sm text-center text-gray-400">
-              <span>© 2020 All rights reserved.</span>
+              <span>2005 All rights reserved.</span>
             </p>
           </div>
         </nav>

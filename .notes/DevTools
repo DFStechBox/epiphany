@@ -1,4 +1,10 @@
 Site was developed with "Astro Framework"
-Clean Cache: "npm cache verify"
 
+Used Grid Auto Fit for Tailwind CSS
+https://github.com/ThirusOfficial/tailwind-grid-auto-fit
+
+
+______________________________________________
+Clean Cache: "npm cache verify"
 Rename: "deps_temp_f76f8f77" to "deps"
+______________________________________________

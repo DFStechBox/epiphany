@@ -14,8 +14,12 @@
     "@fontsource/allura": "^5.1.1",
     "@fontsource/cormorant-garamond": "^5.1.1",
     "@fontsource/cormorant-upright": "^5.1.1",
+    "@fontsource/poppins": "^5.1.1",
     "@fontsource/tangerine": "^5.1.1",
-    "astro": "^5.2.3",
+    "astro": "^5.3.0",
     "tailwindcss": "^3.4.17"
+  },
+  "devDependencies": {
+    "@shrutibalasa/tailwind-grid-auto-fit": "^1.1.0"
   }
 }

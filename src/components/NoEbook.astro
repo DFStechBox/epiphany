@@ -6,7 +6,7 @@ import { Image } from 'astro:assets';
 
 <section class="w-full mt-12 flex flex-wrap md:flex-nowrap">
   <div class="grid justify-items-center content-center mx-auto px-4 md:pl-14 basis-1/4 md:ml-8">
-    <div class=" z-[-1] portraitBackground rounded-full"></div>
+    <div class=" z-[-1] back rounded-full"></div>
     <div class="image transform -translate-x-4 my-[-17.5rem]">
       <Image
         height={380}
@@ -34,6 +34,9 @@ import { Image } from 'astro:assets';
   <div class="">
     <TopNav />
   </div>
+  <div>
+    <h1>Sorry, Ebook is not yet available</h1>
+  </div>
 </section>
 
 <style>
@@ -51,7 +54,7 @@ import { Image } from 'astro:assets';
     font-weight: 500;
   }
 
-  .portraitBackground {
+  .back {
     height: 18rem;
     width: 18rem;
     background-color: #BAC5A4;

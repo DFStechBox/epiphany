@@ -17,11 +17,14 @@ export default {
         bgColor2: "ded2ab",
       },
 
-      // fontFamily: {
-      //   sans: ["Dancing Script variable", "sans-serif"],
-      // },
+      fontFamily: {
+        poppins: ["Poppins", "sans-serif"],
+      },
     },
   },
 
-  plugins: [],
+  plugins: [
+    require("@shrutibalasa/tailwind-grid-auto-fit"),
+    // ...
+  ],
 };
