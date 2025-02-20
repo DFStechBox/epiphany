@@ -1,77 +1,15 @@
 ---
-import TopNav from "./TopNav.astro";
-import ePortrait from "../assets/images/portrait-ver4@2x.png";
-import { Image } from 'astro:assets';
+
+import EdsPlusNav from "./EdsPlusNav.astro";
 ---
 
-<section class="w-full mt-12 flex flex-wrap md:flex-nowrap">
-  <div class="grid justify-items-center content-center mx-auto px-4 md:pl-14 basis-1/4 md:ml-8">
-    <div class=" z-[-1] back rounded-full"></div>
-    <div class="image transform -translate-x-4 my-[-17.5rem]">
-      <Image
-        height={380}
-        width={280}
-        src={ePortrait}
-        alt="Elain's Portrait"
-        quality={"max"}
-      />
-    </div>
-  </div>
 
-  <div class="flex flex-col mx-auto w-full mt-10">
-    <p class="welcome mx-auto text-gray-500 lg:text-3xl">Welcome, i'm</p>
-    <p class="edsName mt-4 text-5xl lg:text-8xl md:text-7xl text-center pb-0">
-      Elaine Denald Stewart
-    </p>
-    <p class="profession text-center text-2xl md:text-3xl leading-none">Writer & Author</p>
-    
-    <p class="books mx-auto mt-8 text-3xl border-t border-b border-bgColor1 tracking-widest">
-      Epiphany & Rhymes Books
-      </p>
-    </div>
-</section>
 <section>
-  <div class="">
-    <TopNav />
-  </div>
   <div>
-    <h1>Sorry, Ebook is not yet available</h1>
+    <EdsPlusNav />
+  
+  
+    <h1 class="flex justify-center mt-10 mb-8">Sorry, Ebook is not yet available.</h1>
   </div>
 </section>
 
-<style>
-  .edsName {
-    font-family: "Tangerine", cursive;
-  }
-
-  .welcome {
-    font-family: 'Dancing Script Variable', cursive;
-    transform: scale(.85, 1)
-  }
-
-  .profession {
-    font-family: 'Cormorant Garamond', serif;
-    font-weight: 500;
-  }
-
-  .back {
-    height: 18rem;
-    width: 18rem;
-    background-color: #BAC5A4;
-    /* align-content: end;
-    justify-content: start; */
-
-  }
-
-  .books {
-    font-family: 'Cormorant Upright', serif;
-    transform: scale(.75, 1);
-    font-weight: 500;
-  }
-
-  .wrapper {
-    /* border: 1px solid red; */
-    /* grid-template-columns: auto auto;
-    grid-template-rows: auto; */
-  }
-</style>

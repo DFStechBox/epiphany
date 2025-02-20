@@ -1,12 +1,13 @@
 ---
-import '@fontsource/tangerine';
-import '@fontsource-variable/dancing-script';
-import '@fontsource/cormorant-garamond/500.css';
-import '@fontsource/allura';
-import '@fontsource/cormorant-upright';
-import '@fontsource/poppins';
-import BooksCover from '../components/BooksCover.astro';
-import NewestBook from '../components/NewestBook.astro';
+import "@fontsource/tangerine";
+import "@fontsource-variable/dancing-script";
+import "@fontsource/cormorant-garamond/500.css";
+import "@fontsource/allura";
+import "@fontsource/cormorant-upright";
+import "@fontsource/poppins";
+import BooksCover from "../components/BooksCover.astro";
+import NewestBook from "../components/NewestBook.astro";
+import NoEbook from "../components/NoEbook.astro";
 
 interface Props {
   title: string;
@@ -23,13 +24,10 @@ const { title } = Astro.props;
 
     <title>{title}</title>
   </head>
-  <!-- bg-gradient-to-b from-[#c7ab59] to-[#ded2ab]  -->
-  <!-- bg-gradient-to-b from-[#c7ab59] from-10% via-[#699ec3] via-30% to-[#ffffff] to-90% to-[#699ec3] -->
-  <body class="bg-gradient-to-b from-[#cfd59f] via-[#f7eddf] to-[#f7eddf] max-w-screen-xl mx-auto">
-    <div class="m-auto">
-    <div class="">
-      <slot />
-    </div>
 
+  <body>
+    <div class="">
+      <NoEbook />
+    </div>
   </body>
 </html>
